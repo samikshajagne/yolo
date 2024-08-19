@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 model = YOLO('yolov8n.pt')  # Replace 'yolov8n.pt' with the path to your custom weights if needed
 
 # Load the image
-image_path = 'images/01.jpg'  # Replace with your image path
+image_path = 'images/04.jpg'  # Replace with your image path
 image = cv2.imread(image_path)
 
 # Perform detection
@@ -24,5 +24,5 @@ plt.axis('off')  # Hide axes
 plt.show()
 
 # Optionally, save the annotated image
-output_path = 'detected_image1.jpg'  # Specify where you want to save the image
+output_path = 'detected_image4.jpg'  # Specify where you want to save the image
 cv2.imwrite(output_path, annotated_image)
